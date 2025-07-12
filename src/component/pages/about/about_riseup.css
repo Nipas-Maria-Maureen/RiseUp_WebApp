@@ -1,0 +1,91 @@
+/* Base container */
+.abt_container {
+  background: linear-gradient(135deg, #001f4d, #002b5c); /* Dark Blue gradient */
+  color: #ffcc00; /* Gold */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Wrapper */
+.abt_wrapper {
+  max-width: 800px;
+  width: 100%;
+  background-color: rgba(0, 15, 40, 0.85);
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+}
+
+/* Titles */
+.abt_title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffcc00;
+  text-align: center;
+}
+
+.abt_intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #ffe066;
+}
+
+/* Sections */
+.abt_section {
+  margin-bottom: 2rem;
+}
+
+.abt_subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  color: #ffd700;
+}
+
+.abt_section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #f9e79f;
+}
+
+/* List items */
+.abt_list {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.abt_list li {
+  margin-bottom: 0.5rem;
+  color: #ffe066;
+}
+
+/* Buttons */
+.abt_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.abt_btn {
+  background-color: #ffcc00;
+  color: #002147;
+  padding: 0.7rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.abt_btn:hover {
+  background-color: #e6b800;
+  color: white;
+  transform: scale(1.05);
+}

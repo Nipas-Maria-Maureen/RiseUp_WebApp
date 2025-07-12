@@ -1,0 +1,124 @@
+.reflection-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Controls Section */
+.adn-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.adn-input,
+.adn-date {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1 1 200px;
+  transition: border-color 0.3s;
+}
+
+.adn-input:focus,
+.adn-date:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Table Styles */
+.reflection-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.reflection-table th,
+.reflection-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 15px;
+}
+
+.reflection-table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 600;
+}
+
+.reflection-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.action-buttons button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-buttons .edit-btn {
+  background-color: #ffd166;
+  color: #333;
+}
+
+.action-buttons .delete-btn {
+  background-color: #ef476f;
+  color: #fff;
+}
+
+.action-buttons button:hover {
+  opacity: 0.85;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .reflection-table thead {
+    display: none;
+  }
+
+  .reflection-table, .reflection-table tbody, .reflection-table tr, .reflection-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .reflection-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  .reflection-table td {
+    padding: 10px 16px;
+    text-align: right;
+    position: relative;
+  }
+
+  .reflection-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #444;
+  }
+}
